@@ -1,13 +1,17 @@
 {
-  "name": "wrequire",
+  "name": "wrecquire",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "muqsith",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muqsith/wrecquire.git"
+  },
   "devDependencies": {
     "mocha": "^5.2.0"
   },
