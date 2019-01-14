@@ -1,12 +1,12 @@
 const assert = require('assert');
 
-const wrequire = require('../index');
+const wrecquire = require('../index');
 
-const app = wrequire('./src/app', { before: () => {console.log(Date.now())}, after: () => {console.log(Date.now())}});
+const app = wrecquire('./src/app', { before: () => {console.log(Date.now())}, after: () => {console.log(Date.now())}});
 
-const circle = wrequire('./src/circle', { before: () => {console.log(Date.now())}, after: () => {console.log(Date.now())}});
+const circle = wrecquire('./src/circle', { before: () => {console.log(Date.now())}, after: () => {console.log(Date.now())}});
 
-const Person = wrequire('./src/Person', { before: () => {console.log(Date.now())}, after: () => {console.log(Date.now())}});
+const Person = wrecquire('./src/Person', { before: () => {console.log(Date.now())}, after: () => {console.log(Date.now())}});
 
 
 describe('app', function () {

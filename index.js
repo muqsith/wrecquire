@@ -102,11 +102,11 @@ function applyAspects(requiredModule, aspects) {
     return result;
 }
 
-function wrequire(modulePath, aspects) {
+function wrecquire(modulePath, aspects) {
     const dirname = path.dirname(module.parent.id);
     const absoluteModulePath = path.resolve(dirname, modulePath);
     const requiredModule = require(absoluteModulePath);
     return applyAspects(requiredModule, aspects);
 }
 
-module.exports = wrequire;
+module.exports = wrecquire;
